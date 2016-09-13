@@ -168,7 +168,7 @@ import Utils from './utils';
                 return this.set(0).set(1);
             }
 
-            if (this._isIndeterminateStyle()) {
+            if (progress && this._isIndeterminateStyle()) {
 
                 // force end
                 if(!this._isRendered() && force) {
